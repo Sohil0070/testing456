@@ -27,6 +27,11 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/5f1a3df8d7029f29
 SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/db90f07b4f35e6948466d.jpg")
 VRFY_IMG = environ.get("VRFY_IMG", "https://telegra.ph/file/5f1a3df8d7029f29287a0.jpg")
 
+#stream link shortner
+STREAM_SITE = (environ.get('STREAM_SITE', 'ziplinker.net'))
+STREAM_API = (environ.get('STREAM_API', '90f14aba8856f33420f40490f2159844bd4d6d31'))
+STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/HowToOpenLinkHP/69'))
+
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
